@@ -1,0 +1,71 @@
+[
+  {
+    "Id": "a9f33330-eb55-4e08-8aa5-2133f18a2629",
+    "Status": "OnSale",
+    "Title": "Basroldeki Kadinlar",
+    "Date": "2022-01-16T00:00:00",
+    "Time": "14:00",
+    "Theater": "Sahne Tozu Tiyatrosu",
+    "Scene": "Haldun Dormen Sahnesi",
+    "City": "Izmir",
+    "Writer": "Ked Ludwig",
+    "Translater": "Ekin Caglayan Turan",
+    "AdaptedBy": "Caglar Isgoren",
+    "DirectedBy": "Caglar Isgoren",
+    "Description": "Nuri ve Necati Istanbullu iki oyuncudur",
+    "ActivityRules": [
+      "Dijital biletlerinizi indirmeyi unutmayiniz",
+      "Satin alinan biletlerde iptal iade ve degisiklik yapilmaz",
+      "Oyun basladiktan sonra salona seyirci alinmayacaktir, oyun baslamadan 10 dk once salondaki yerinizi almaniz gerekmektedir"
+    ],
+    "TicketPrices": [
+      {
+        "Level": "1. Kategori",
+        "Price": 56.50
+      },
+      {
+        "Level": "2.Kategori",
+        "Price": 45.00
+      }
+    ]
+  },
+  {
+    "Id": "721ba0ec-e96f-47e4-91c3-9105dc7a8f2c",
+    "Status": "SoldOut",
+    "Title": "CSharp Guzeldir",
+    "Date": "2022-01-17T00:00:00",
+    "Time": "21:00",
+    "Theater": "Konya Devlet Tiyatorsu",
+    "Scene": "Fausth Sahnesi",
+    "City": "Konya",
+    "Writer": "Ked Ludwig",
+    "Translater": "Ahmet Altun",
+    "AdaptedBy": "Ahmet Altun",
+    "DirectedBy": "Ahmet Altun",
+    "Description": "Ahmet ve Altun Tokatli iki oyuncudur. C Sharp Programlama Dili ile Nesne Yonelimli Programlama tekniklerine sadik kalarak bir uygulama yapilmasi istenir",
+    "ActivityRules": [],
+    "TicketPrices": [
+      {
+        "Level": "1. Kategori",
+        "Price": 113.00
+      }
+    ]
+  },
+  {
+    "Id": "96e9b75b-3911-4b42-9abd-df268bbc176d",
+    "Status": "Active",
+    "Title": "Abc",
+    "Date": "2022-01-18T00:00:00+03:00",
+    "Time": "21:00",
+    "Theater": null,
+    "Scene": null,
+    "City": null,
+    "Writer": null,
+    "Translater": null,
+    "AdaptedBy": "Ahmet Altun",
+    "DirectedBy": "Ahmet Altun",
+    "Description": "C Sharp OOP Projesi",
+    "ActivityRules": [],
+    "TicketPrices": []
+  }
+]
