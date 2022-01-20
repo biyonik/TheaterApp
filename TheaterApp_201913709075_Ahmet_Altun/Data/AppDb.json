@@ -21,11 +21,11 @@
     "TicketPrices": [
       {
         "Level": "1. Kategori",
-        "Price": 56.50
+        "Price": 56.5
       },
       {
         "Level": "2.Kategori",
-        "Price": 45.00
+        "Price": 45
       }
     ]
   },
@@ -47,25 +47,48 @@
     "TicketPrices": [
       {
         "Level": "1. Kategori",
-        "Price": 113.00
+        "Price": 113
       }
     ]
   },
   {
-    "Id": "96e9b75b-3911-4b42-9abd-df268bbc176d",
+    "Id": "29212350-8905-4645-88fc-eb047b480d7c",
     "Status": "Active",
-    "Title": "Abc",
-    "Date": "2022-01-18T00:00:00+03:00",
-    "Time": "21:00",
-    "Theater": null,
-    "Scene": null,
-    "City": null,
-    "Writer": null,
-    "Translater": null,
-    "AdaptedBy": "Ahmet Altun",
-    "DirectedBy": "Ahmet Altun",
-    "Description": "C Sharp OOP Projesi",
-    "ActivityRules": [],
-    "TicketPrices": []
+    "Title": "A",
+    "Date": "2022-01-20T00:00:00+03:00",
+    "Time": "18:00",
+    "Theater": "C",
+    "Scene": "sdfsdfsd",
+    "City": "B",
+    "Writer": "sdf",
+    "Translater": "sdf",
+    "AdaptedBy": "kldfg",
+    "DirectedBy": "dfg",
+    "Description": "sdfklmsdfk",
+    "ActivityRules": [
+      "dfgmkdf",
+      "dfkgnkdf",
+      "dfkgnmdf",
+      "dfgkmdf",
+      ""
+    ],
+    "TicketPrices": [
+      {
+        "Level": "1",
+        "Price": 55
+      },
+      {
+        "Level": "2",
+        "Price": 65
+      },
+      {
+        "Level": "3",
+        "Price": 75
+      },
+      {
+        "Level": "4",
+        "Price": 85
+      }
+    ]
   }
 ]

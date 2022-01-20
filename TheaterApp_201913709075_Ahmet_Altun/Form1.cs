@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using TheaterApp.Entities.Concrete;
 using TheaterApp.Entities.Enums;
+using TheaterApp.Forms;
 using TheaterApp.Services.Concrete;
 
 namespace TheaterApp
@@ -16,13 +18,13 @@ namespace TheaterApp
             theaterDataGridView.AutoGenerateColumns = false;
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private async void frmMain_Load(object sender, EventArgs e)
         {
-            GetAllTheatreAsync();
+            await GetAllTheatreAsync();
             FillFilterComboBox();
         }
 
-        public async void GetAllTheatreAsync()
+        public async Task GetAllTheatreAsync()
         {
             theaterDataGridView.DataSource = await theaterService.GetAllAsync();
             //var data = await theaterService.GetByIdAsync("721ba0ec-e96f-47e4-91c3-9105dc7a8f2c");
@@ -67,17 +69,34 @@ namespace TheaterApp
 
         private async void btnAdd_Click(object sender, EventArgs e)
         {
-            //await theaterService.AddAsync(new Theatre
-            //{
-            //    Id = Guid.NewGuid().ToString(),
-            //    Title = "Abc",
-            //    Status = Status.Active,
-            //    AdaptedBy = "Ahmet Altun",
-            //    DirectedBy = "Ahmet Altun",
-            //    Date = DateTime.Now.Date,
-            //    Time = "21:00",
-            //    Description = "C Sharp OOP Projesi"
-            //});
+            frmAdd frmAdd = new frmAdd();
+            frmAdd.ShowDialog();
+            var addedEntity = frmAdd.theatre;
+            if(addedEntity != null)
+            {
+                await theaterService.AddAsync(addedEntity);
+                await GetAllTheatreAsync();
+            }
+        }
+
+        private async void btnDelete_Click(object sender, EventArgs e)
+        {
+            var dialogResult = MessageBox.Show("Bu kaydı silmek istiyor musunuz?","Soru",MessageBoxButtons.OKCancel);
+            if(dialogResult == DialogResult.OK)
+            {
+                var selectedItemId = theaterDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                var entity = await theaterService.GetByIdAsync(selectedItemId);
+                theaterService.Remove(entity);
+                await GetAllTheatreAsync();
+            }
+        }
+
+        private async void btnDetails_Click(object sender, EventArgs e)
+        {
+            var selectedItemId = theaterDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            var entity = await theaterService.GetByIdAsync(selectedItemId);
+            frmDetail frmDetail = new frmDetail(entity);
+            frmDetail.ShowDialog();
         }
     }
 }

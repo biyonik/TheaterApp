@@ -53,8 +53,14 @@
             this.tbxDirectedBy = new System.Windows.Forms.TextBox();
             this.rtbxDescription = new System.Windows.Forms.RichTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.trbxRules = new System.Windows.Forms.RichTextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.dtgTicketPrices = new System.Windows.Forms.DataGridView();
+            this.label14 = new System.Windows.Forms.Label();
+            this.rtbxRules = new System.Windows.Forms.RichTextBox();
+            this.Level = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label15 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTicketPrices)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -171,84 +177,84 @@
             this.cmbStatus.Location = new System.Drawing.Point(101, 58);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(344, 21);
-            this.cmbStatus.TabIndex = 1;
+            this.cmbStatus.TabIndex = 0;
             // 
             // tbxTitle
             // 
             this.tbxTitle.Location = new System.Drawing.Point(101, 85);
             this.tbxTitle.Name = "tbxTitle";
             this.tbxTitle.Size = new System.Drawing.Size(344, 20);
-            this.tbxTitle.TabIndex = 2;
+            this.tbxTitle.TabIndex = 1;
             // 
             // dtpDate
             // 
             this.dtpDate.Location = new System.Drawing.Point(101, 111);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(344, 20);
-            this.dtpDate.TabIndex = 3;
+            this.dtpDate.TabIndex = 2;
             // 
             // tbxTime
             // 
             this.tbxTime.Location = new System.Drawing.Point(101, 135);
             this.tbxTime.Name = "tbxTime";
             this.tbxTime.Size = new System.Drawing.Size(344, 20);
-            this.tbxTime.TabIndex = 2;
+            this.tbxTime.TabIndex = 3;
             // 
             // tbxCity
             // 
             this.tbxCity.Location = new System.Drawing.Point(101, 163);
             this.tbxCity.Name = "tbxCity";
             this.tbxCity.Size = new System.Drawing.Size(344, 20);
-            this.tbxCity.TabIndex = 2;
+            this.tbxCity.TabIndex = 4;
             // 
             // tbxTheater
             // 
             this.tbxTheater.Location = new System.Drawing.Point(101, 188);
             this.tbxTheater.Name = "tbxTheater";
             this.tbxTheater.Size = new System.Drawing.Size(344, 20);
-            this.tbxTheater.TabIndex = 2;
+            this.tbxTheater.TabIndex = 5;
             // 
             // tbxScene
             // 
             this.tbxScene.Location = new System.Drawing.Point(101, 215);
             this.tbxScene.Name = "tbxScene";
             this.tbxScene.Size = new System.Drawing.Size(344, 20);
-            this.tbxScene.TabIndex = 2;
+            this.tbxScene.TabIndex = 6;
             // 
             // tbxWriter
             // 
             this.tbxWriter.Location = new System.Drawing.Point(101, 241);
             this.tbxWriter.Name = "tbxWriter";
             this.tbxWriter.Size = new System.Drawing.Size(344, 20);
-            this.tbxWriter.TabIndex = 2;
+            this.tbxWriter.TabIndex = 7;
             // 
             // tbxTranslater
             // 
             this.tbxTranslater.Location = new System.Drawing.Point(101, 267);
             this.tbxTranslater.Name = "tbxTranslater";
             this.tbxTranslater.Size = new System.Drawing.Size(344, 20);
-            this.tbxTranslater.TabIndex = 2;
+            this.tbxTranslater.TabIndex = 8;
             // 
             // tbxAdabtedBy
             // 
             this.tbxAdabtedBy.Location = new System.Drawing.Point(101, 293);
             this.tbxAdabtedBy.Name = "tbxAdabtedBy";
             this.tbxAdabtedBy.Size = new System.Drawing.Size(344, 20);
-            this.tbxAdabtedBy.TabIndex = 2;
+            this.tbxAdabtedBy.TabIndex = 9;
             // 
             // tbxDirectedBy
             // 
             this.tbxDirectedBy.Location = new System.Drawing.Point(101, 319);
             this.tbxDirectedBy.Name = "tbxDirectedBy";
             this.tbxDirectedBy.Size = new System.Drawing.Size(344, 20);
-            this.tbxDirectedBy.TabIndex = 2;
+            this.tbxDirectedBy.TabIndex = 10;
             // 
             // rtbxDescription
             // 
             this.rtbxDescription.Location = new System.Drawing.Point(101, 348);
             this.rtbxDescription.Name = "rtbxDescription";
             this.rtbxDescription.Size = new System.Drawing.Size(344, 71);
-            this.rtbxDescription.TabIndex = 4;
+            this.rtbxDescription.TabIndex = 11;
             this.rtbxDescription.Text = "";
             // 
             // label13
@@ -260,30 +266,81 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Rules";
             // 
-            // trbxRules
-            // 
-            this.trbxRules.Location = new System.Drawing.Point(101, 426);
-            this.trbxRules.Name = "trbxRules";
-            this.trbxRules.Size = new System.Drawing.Size(344, 71);
-            this.trbxRules.TabIndex = 4;
-            this.trbxRules.Text = "";
-            // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(319, 661);
+            this.btnAdd.Location = new System.Drawing.Point(319, 745);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(126, 45);
-            this.btnAdd.TabIndex = 5;
+            this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // dtgTicketPrices
+            // 
+            this.dtgTicketPrices.AllowUserToOrderColumns = true;
+            this.dtgTicketPrices.AllowUserToResizeColumns = false;
+            this.dtgTicketPrices.AllowUserToResizeRows = false;
+            this.dtgTicketPrices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgTicketPrices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTicketPrices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Level,
+            this.Price});
+            this.dtgTicketPrices.Location = new System.Drawing.Point(101, 573);
+            this.dtgTicketPrices.Name = "dtgTicketPrices";
+            this.dtgTicketPrices.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dtgTicketPrices.Size = new System.Drawing.Size(344, 141);
+            this.dtgTicketPrices.TabIndex = 13;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 573);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(69, 13);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "Ticket Prices";
+            // 
+            // rtbxRules
+            // 
+            this.rtbxRules.Location = new System.Drawing.Point(101, 426);
+            this.rtbxRules.Name = "rtbxRules";
+            this.rtbxRules.Size = new System.Drawing.Size(344, 141);
+            this.rtbxRules.TabIndex = 12;
+            this.rtbxRules.Text = "";
+            // 
+            // Level
+            // 
+            this.Level.DataPropertyName = "TicketPrice.Level";
+            this.Level.HeaderText = "Seviye";
+            this.Level.Name = "Level";
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "TicketPrice.Price";
+            this.Price.HeaderText = "Bedel";
+            this.Price.Name = "Price";
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(18, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(427, 29);
+            this.label15.TabIndex = 42;
+            this.label15.Text = "Yeni Tiyatro Oyunu Ekle";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // frmAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 718);
+            this.ClientSize = new System.Drawing.Size(469, 802);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.rtbxRules);
+            this.Controls.Add(this.dtgTicketPrices);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.trbxRules);
             this.Controls.Add(this.rtbxDescription);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.tbxDirectedBy);
@@ -311,6 +368,8 @@
             this.Controls.Add(this.label1);
             this.Name = "frmAdd";
             this.Text = "Yeni Tiyatro Ekle";
+            this.Load += new System.EventHandler(this.frmAdd_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTicketPrices)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,7 +402,12 @@
         private System.Windows.Forms.TextBox tbxDirectedBy;
         private System.Windows.Forms.RichTextBox rtbxDescription;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RichTextBox trbxRules;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.DataGridView dtgTicketPrices;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.RichTextBox rtbxRules;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Level;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.Label label15;
     }
 }

@@ -68,17 +68,14 @@ namespace TheaterApp.Repositories.Concrete
         public async void Remove(T entity)
         {
             var obj = (IWithId)entity;
-            var item = await GetByIdAsync(obj.Id);
             var data = await GetAllAsync();
             List<T> list = new List<T>(data);
-            if(item != null)
-            {
-                list.Remove(item);
-            }
+            var removedItem = (T)(from x in list.OfType<IWithId>() where x.Id == obj.Id select x).SingleOrDefault();
+            list.Remove(removedItem);
             File.Delete(FilePath);
             using (FileStream fs = File.Create(FilePath))
             {
-                await JsonSerializer.SerializeAsync(fs, data, options);
+                await JsonSerializer.SerializeAsync(fs, list, options);
             }
         }
 

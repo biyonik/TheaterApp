@@ -30,6 +30,14 @@
         {
             this.dataPanel = new System.Windows.Forms.Panel();
             this.theaterDataGridView = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Theatre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Scene = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpBoxSearch = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,14 +49,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Theatre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Scene = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDetails = new System.Windows.Forms.Button();
             this.dataPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.theaterDataGridView)).BeginInit();
@@ -93,6 +93,57 @@
             this.theaterDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.theaterDataGridView.Size = new System.Drawing.Size(1264, 643);
             this.theaterDataGridView.TabIndex = 0;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "Durum";
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Title
+            // 
+            this.Title.DataPropertyName = "Title";
+            this.Title.HeaderText = "Başlık";
+            this.Title.Name = "Title";
+            // 
+            // City
+            // 
+            this.City.DataPropertyName = "City";
+            this.City.HeaderText = "Şehir";
+            this.City.Name = "City";
+            // 
+            // Date
+            // 
+            this.Date.DataPropertyName = "Date";
+            this.Date.HeaderText = "Gün";
+            this.Date.Name = "Date";
+            // 
+            // Time
+            // 
+            this.Time.DataPropertyName = "Time";
+            this.Time.HeaderText = "Saat";
+            this.Time.Name = "Time";
+            // 
+            // Theatre
+            // 
+            this.Theatre.DataPropertyName = "Theater";
+            this.Theatre.HeaderText = "Tiyatro";
+            this.Theatre.Name = "Theatre";
+            // 
+            // Scene
+            // 
+            this.Scene.DataPropertyName = "Scene";
+            this.Scene.HeaderText = "Sahne";
+            this.Scene.Name = "Scene";
             // 
             // grpBoxSearch
             // 
@@ -199,57 +250,7 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // Status
-            // 
-            this.Status.DataPropertyName = "Status";
-            this.Status.HeaderText = "Durum";
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
-            this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Title
-            // 
-            this.Title.DataPropertyName = "Title";
-            this.Title.HeaderText = "Başlık";
-            this.Title.Name = "Title";
-            // 
-            // City
-            // 
-            this.City.DataPropertyName = "City";
-            this.City.HeaderText = "Şehir";
-            this.City.Name = "City";
-            // 
-            // Date
-            // 
-            this.Date.DataPropertyName = "Date";
-            this.Date.HeaderText = "Gün";
-            this.Date.Name = "Date";
-            // 
-            // Time
-            // 
-            this.Time.DataPropertyName = "Time";
-            this.Time.HeaderText = "Saat";
-            this.Time.Name = "Time";
-            // 
-            // Theatre
-            // 
-            this.Theatre.DataPropertyName = "Theater";
-            this.Theatre.HeaderText = "Tiyatro";
-            this.Theatre.Name = "Theatre";
-            // 
-            // Scene
-            // 
-            this.Scene.DataPropertyName = "Scene";
-            this.Scene.HeaderText = "Sahne";
-            this.Scene.Name = "Scene";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnDetails
             // 
@@ -259,6 +260,7 @@
             this.btnDetails.TabIndex = 2;
             this.btnDetails.Text = "Detaylar";
             this.btnDetails.UseVisualStyleBackColor = true;
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
             // frmMain
             // 
