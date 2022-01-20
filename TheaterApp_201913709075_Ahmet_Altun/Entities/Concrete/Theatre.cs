@@ -4,6 +4,13 @@ using System.ComponentModel;
 using TheaterApp.Entities.Abstract;
 using TheaterApp.Entities.Enums;
 
+/// <summary>
+/// Theatre somut sınıfı
+/// IEntity arayüzü ile ve IWithId arayüzü ile kontrat imzalar
+/// IWithId arayüzü ile kontrat imzaladığı için string türündeki Id propertysi mecburent bulunmak zorundadır
+/// AppDb.json dosyasındaki key isimlerine karşılık doğru tip ve adda propertyler barındırır
+/// Attribut aracılığı ile her property için görünür bir isim verilmiştir.
+/// </summary>
 namespace TheaterApp.Entities.Concrete
 {
     public class Theatre: IEntity, IWithId

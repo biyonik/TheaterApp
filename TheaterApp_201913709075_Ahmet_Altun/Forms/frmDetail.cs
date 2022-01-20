@@ -8,6 +8,10 @@ namespace TheaterApp.Forms
 {
     public partial class frmDetail : Form
     {
+        /// <summary>
+        /// Private readonly bir Theatre sınıfı
+        /// Yapıcı metotta bir örneği dependency injection yaklaşımı ile alınır
+        /// </summary>
         private readonly Theatre _theatre;
         public frmDetail(Theatre theatre)
         {
@@ -16,12 +20,24 @@ namespace TheaterApp.Forms
             _theatre = theatre;
         }
 
+        /// <summary>
+        /// Bu form üzerindeki cmbStatus combobox nesnesinin veri kaynağını doldurur
+        /// Status enumundaki değerler bu seçim kutusunda listelenir
+        /// </summary>
         public void FillFilterComboBox()
         {
             cmbStatus.DataSource = Enum.GetValues(typeof(Status));
             cmbStatus.SelectedIndex = 0;
         }
 
+        /// <summary>
+        /// Bu form üzerindeki görsel nesnelerin değerleri theatre nesne örneğindeki propertylerin değerleri tarafından doldurulur
+        /// Varsayılan olarak tüm görsel öğeler aktif değildir
+        /// Sadece değerler görüntülenir.
+        /// CRUD operasyon ailesinin R(ead) aksiyonu kotarılmış ve Jenerik Reponun GetById metodunun çalışılabilirliği kanıtlanmaya çalışılmıştır.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmDetail_Load(object sender, EventArgs e)
         {
             if(_theatre != null)

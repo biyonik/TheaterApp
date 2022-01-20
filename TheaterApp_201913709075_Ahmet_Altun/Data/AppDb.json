@@ -30,64 +30,75 @@
     ]
   },
   {
-    "Id": "721ba0ec-e96f-47e4-91c3-9105dc7a8f2c",
-    "Status": "SoldOut",
-    "Title": "CSharp Guzeldir",
-    "Date": "2022-01-17T00:00:00",
-    "Time": "21:00",
-    "Theater": "Konya Devlet Tiyatorsu",
-    "Scene": "Fausth Sahnesi",
-    "City": "Konya",
-    "Writer": "Ked Ludwig",
-    "Translater": "Ahmet Altun",
-    "AdaptedBy": "Ahmet Altun",
-    "DirectedBy": "Ahmet Altun",
-    "Description": "Ahmet ve Altun Tokatli iki oyuncudur. C Sharp Programlama Dili ile Nesne Yonelimli Programlama tekniklerine sadik kalarak bir uygulama yapilmasi istenir",
-    "ActivityRules": [],
+    "Id": "cd6182d7-58d4-4f63-be0e-cf0b89a97fa9",
+    "Status": "Active",
+    "Title": "A",
+    "Date": "2022-01-18T00:00:00",
+    "Time": "11:00",
+    "Theater": "C",
+    "Scene": "D",
+    "City": "B",
+    "Writer": "E",
+    "Translater": "E",
+    "AdaptedBy": "G",
+    "DirectedBy": "H",
+    "Description": "lorem ipsum dolor sit amet",
+    "ActivityRules": [
+      "Lorem",
+      "ipsum",
+      "dolor",
+      "sit"
+    ],
     "TicketPrices": [
       {
-        "Level": "1. Kategori",
-        "Price": 113
+        "Level": "1.Kategori",
+        "Price": 55
+      },
+      {
+        "Level": "2.Kategıori",
+        "Price": 45
+      },
+      {
+        "Level": "3.Kategori",
+        "Price": 35
       }
     ]
   },
   {
-    "Id": "29212350-8905-4645-88fc-eb047b480d7c",
+    "Id": "d2a330cf-397e-4baa-8ee6-26cefe4a06cf",
     "Status": "Active",
-    "Title": "A",
-    "Date": "2022-01-20T00:00:00+03:00",
-    "Time": "18:00",
+    "Title": "A Guncellendi",
+    "Date": "2022-01-16T00:00:00",
+    "Time": "13:00",
     "Theater": "C",
-    "Scene": "sdfsdfsd",
-    "City": "B",
-    "Writer": "sdf",
-    "Translater": "sdf",
-    "AdaptedBy": "kldfg",
-    "DirectedBy": "dfg",
-    "Description": "sdfklmsdfk",
+    "Scene": "D",
+    "City": "B Guncellendi",
+    "Writer": "E",
+    "Translater": "E",
+    "AdaptedBy": "G",
+    "DirectedBy": "H",
+    "Description": "lorem ipsum dolor sit amet",
     "ActivityRules": [
-      "dfgmkdf",
-      "dfkgnkdf",
-      "dfkgnmdf",
-      "dfgkmdf",
-      ""
+      "Lorem",
+      "ipsum",
+      "dolor",
+      "sit",
+      "amet",
+      "lorem",
+      "ipsum"
     ],
     "TicketPrices": [
       {
-        "Level": "1",
+        "Level": "1.Kategori",
         "Price": 55
       },
       {
-        "Level": "2",
-        "Price": 65
+        "Level": "2.Kategıori",
+        "Price": 45
       },
       {
-        "Level": "3",
-        "Price": 75
-      },
-      {
-        "Level": "4",
-        "Price": 85
+        "Level": "3.Kategori",
+        "Price": 35
       }
     ]
   }

@@ -55,10 +55,10 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dtgTicketPrices = new System.Windows.Forms.DataGridView();
-            this.label14 = new System.Windows.Forms.Label();
-            this.rtbxRules = new System.Windows.Forms.RichTextBox();
             this.Level = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label14 = new System.Windows.Forms.Label();
+            this.rtbxRules = new System.Windows.Forms.RichTextBox();
             this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTicketPrices)).BeginInit();
             this.SuspendLayout();
@@ -272,7 +272,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(126, 45);
             this.btnAdd.TabIndex = 14;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -292,6 +292,18 @@
             this.dtgTicketPrices.Size = new System.Drawing.Size(344, 141);
             this.dtgTicketPrices.TabIndex = 13;
             // 
+            // Level
+            // 
+            this.Level.DataPropertyName = "TicketPrice.Level";
+            this.Level.HeaderText = "Seviye";
+            this.Level.Name = "Level";
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "TicketPrice.Price";
+            this.Price.HeaderText = "Bedel";
+            this.Price.Name = "Price";
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -308,18 +320,6 @@
             this.rtbxRules.Size = new System.Drawing.Size(344, 141);
             this.rtbxRules.TabIndex = 12;
             this.rtbxRules.Text = "";
-            // 
-            // Level
-            // 
-            this.Level.DataPropertyName = "TicketPrice.Level";
-            this.Level.HeaderText = "Seviye";
-            this.Level.Name = "Level";
-            // 
-            // Price
-            // 
-            this.Price.DataPropertyName = "TicketPrice.Price";
-            this.Price.HeaderText = "Bedel";
-            this.Price.Name = "Price";
             // 
             // label15
             // 

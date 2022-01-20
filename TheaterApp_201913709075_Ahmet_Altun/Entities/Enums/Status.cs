@@ -1,6 +1,9 @@
 ﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 
+/// <summary>
+/// AppDb.json dosyasındaki her bir tiyatro nesnesinin sahip olduğu "Status" 
+/// anahtarının değerlerinin bir listesini tanımlayan enum
+/// </summary>
 namespace TheaterApp.Entities.Enums
 {
     public enum Status
